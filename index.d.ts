@@ -236,7 +236,7 @@ export default class Client {
     baseUrl: string;
     customHeaders?: HeadersInit;
     requestOptions?: RequestInit;
-    requestSigner?: (string, RequestInit) => void
+    requestSigner?: (string, RequestInit) => Promise<void>
   });
   /**
    * Given a Client response, returns the underlying HTTP request and response

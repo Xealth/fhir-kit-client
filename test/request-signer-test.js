@@ -21,7 +21,7 @@ describe('Client with request signer', function () {
     };
   }
 
-  const requestSigner = (url, requestOptions) => {
+  const requestSigner = async (url, requestOptions) => {
     let awsSignatureOpts = {
       path: requestOptions.path,
       service: 'healthlake',
